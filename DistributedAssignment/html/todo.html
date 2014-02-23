@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script type="text/javascript">
+     function addToList()
+     {
+        var doc = document.getElementById("list");
+        var newLI = document.createElement("li");
+        var input = document.createElement("input");
+        input.type = "text";
+        input.size = "60";
+        newLI.appendChild(input); // typo here, it's not newLi
+        doc.appendChild(newLI);
+     }
+ </script></head>
 <body>
 
 	<h4>To Do List:</h4>
@@ -9,6 +22,9 @@
 		  <li>Tea</li>
 		  <li>Milk</li>
 		</ol>
+	</div>
+	<div id="newitem">
+		<button onclick= "addToList()">Add New Item</button>
 	</div>
 	<div id="lower">
 		<input type="submit" value="Log Out">
