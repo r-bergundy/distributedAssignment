@@ -6,7 +6,7 @@
    </welcome-file-list>
  <servlet>
     <servlet-name>dt340aServlet</servlet-name>
-    <servlet-class>servletPackage.MyServlet</servlet-class>
+    <servlet-class>servlet.MyServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
